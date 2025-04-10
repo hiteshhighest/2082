@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A heartfelt interactive New Year 2082 message dedicated to Manavi, full of love, reflection, and hope.">
+    <meta name="theme-color" content="#ff69b4">
+    <title>Happy New Year 2082</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="Happy">
+        <p>Happy New Year 2082<br><span style="font-size: 1.5rem; font-weight: 300; font-family: 'Courier New', Courier, monospace;">To someone incredibly special</span></p>
+    </div>
+
+    <section class="year">
+        <div>
+            <p style="font-size: 1.2rem; font-weight: bold;">Happy New Year to the most special person in my life</p>
+            <br>
+            <p>This year, I wish for you to receive all the joy in the world, may your life be filled with a lot of laughter, entertainment and with zero pain. I hope this year goes well for you both academically and socially. 💖</p>
+            <br>
+            <p>In the year 2082, I hope you achieve all your goals, and I hope it is filled with beautiful surprises, and moments that warm your heart. May you never stop smiling, even when things feel heavy.</p>
+            <br>
+            <p>नयाँ वर्ष २०८२ को धेरै धेरै शुभकामना। 🎉</p>
+        </div>
+    </section>
+
+    <section class="New">
+        <span style="font-weight: bold; font-size: 1.5rem; font-family: 'Playfair Display', serif;">Dear Manavi,</span>
+        <div>
+            <br>
+            After the break up, I have realized how much I loved you and how badly I treated you. Last year wasn’t perfect, I hurt you, disappointed you, and maybe even made you doubt my love. But I have been improving, learning, and trying to change every day since.
+            <br><br>
+            This website is a tiny gift which I made using my emotions and love for you. It’s not much and neither expensive, but it carries my most sincere feelings. ❤️
+            <br><br>
+            It hurts how we are getting seprated and we won't be in the same school after a few months. Even if we get seprated, I’ll never forget the happiness you brought into my life. Thank you for every laugh, every lesson, and every memory. I will always enjoy and love them.
+            <br><br>
+            Let’s make this year special. A new beginning, maybe for us, too.
+        </div>
+    </section>
+
+    <section class="image-section">
+        <img src="Images/Her image - 1.png" alt="Her Image 1">
+        <img src="Images/Her image - 2.png" alt="Her Image 2">
+    </section>
+
+    <section class="memory-lane">
+        <h2>Our memories together</h2>
+        <div class="carousel">
+            <img src="Images/Memory - 1.png" alt="Memory 1">
+            <img src="Images/Memory - 2.png" alt="Memory 2">
+        </div>
+    </section>
+
+    <div class="unlock-input">
+        <p style="font-weight: 500;">Enter the secret code to reveal something special 💌</p>
+        <input type="number" id="secretCode" placeholder="Enter secret code">
+        <button onclick="unlockSecret()">Unlock</button>
+    </div>
+
+    <section class="Contact">
+        <h2>Contact Me</h2>
+        <p>If you ever feel like talking, or just want to share something, I'm always here. You can reach me anytime — I’ll be waiting to hear from you.</p>
+        <br>
+        <div class="year">
+            "Even if we argue, even if we drift apart for a while... <strong>I can't break up</strong>. Not with you. Never with you."
+        </div>
+        <br>
+        <form action="https://formsubmit.co/hiteshhighest122@gmail.com" method="post">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="name" placeholder="Your Name" value="Manavi Adhikari" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </section>
+
+    <section id="secret-section">
+        <h2>🌟 A little hidden message 🌟</h2>
+        <p>I believe that we are meant to be together. I believe that our story isn't over yet, we have way more to explore and look for. I have faith in god, he wouldn't end such a great story like this. And remember a great man once said, <b>"Fights aren't supposed to drift us apart, it is meant to make us stronger"</b></p>
+    </section>
+
+    <script>
+        function unlockSecret() {
+            const input = document.getElementById('secretCode').value;
+            const section = document.getElementById('secret-section');
+            if (input === '0620') {
+                section.style.display = 'block';
+                window.scrollTo({ top: section.offsetTop, behavior: 'smooth' });
+            } else {
+                alert('Incorrect code. Try the date we got together (MMDD).');
+            }
+        }
+    </script>
+</body>
+</html>

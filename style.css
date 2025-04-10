@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    color: #333;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+.Happy {
+    background: url('Images/Background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.Happy::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.Happy p {
+    font-size: 5rem;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+}
+
+section {
+    margin: 40px 20px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+}
+
+.memory-lane {
+    margin: 50px 20px;
+    padding: 30px;
+    border-radius: 15px;
+    background: #ffe3f0;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.memory-lane h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    font-family: 'Great Vibes', cursive;
+    color: #d63384;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carousel img {
+    width: 250px;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+    transform: scale(1.05);
+}
+
+.Contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: #ff69b4;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #e754a6;
+}
+
+.sorry ol {
+    columns: 2;
+    list-style: decimal inside;
+    padding-left: 20px;
+}
+
+.image-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.image-section img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-section img:hover {
+    transform: scale(1.05);
+}
+
+#secret-section {
+    display: none;
+    margin-top: 20px;
+    background: #ffe3f0;
+    color: #000;
+}
+
+.unlock-input {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.unlock-input input {
+    padding: 10px;
+    width: 200px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.unlock-input button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
